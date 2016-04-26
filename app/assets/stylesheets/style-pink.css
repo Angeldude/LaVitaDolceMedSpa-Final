@@ -294,7 +294,7 @@ a.menu_toggler {display:none;
 
 
 #dot-matrix {
-    background: url(../images/dark-dot.png);
+    background: url(dark-dot.png);
     height: 100%;
     width: 100%;
     position: fixed;
@@ -1146,9 +1146,9 @@ textarea:focus:-ms-input-placeholder {
 	background-position:0 0;
 	background-repeat:no-repeat;
 }
-.notification_error:before {background-image:url(../images/error.png);
+.notification_error:before {background-image:url(error.png);
 }
-.notification_ok:before {background-image:url(../images/info.png);
+.notification_ok:before {background-image:url(info.png);
 }
 
 .no_bottom {padding-bottom:0;
