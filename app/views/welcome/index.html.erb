@@ -252,7 +252,9 @@
                                     <h4>Injectables</h4>
                                     <div class="separator"></div>
                                     <p>Injectables are a great way to treat a wide range of wrinkles, lines, and other things you might not enjoy seeing when you look in the mirror.</p>
-                                    <a href="javascript:void(0);" class="shortcode_button">Read More</a>
+
+                                    <!-- Trigger the modal with a button -->
+                                    <button type="button" class="shortcode_button" data-toggle="modal" data-target="#injectables-RM">Read More</button>
                                 </div>
                             </div>
                             <div class="item-service block">
@@ -262,7 +264,8 @@
                                     <div class="separator"></div>
                                     <p>We offer a variety of different facial services to address your individual and unique skin concerns.</p>
                                     <br>
-                                    <a href="javascript:void(0);" class="shortcode_button">Read More</a>
+                                    <!-- Trigger the modal with a button -->
+                                    <button type="button" class="shortcode_button" data-toggle="modal" data-target="#facials-RM">Read More</button>
                                 </div>
                             </div>
                             <div class="item-service block">
@@ -271,8 +274,9 @@
                                     <h4>I-Peel</h4>
                                     <div class="separator"></div>
                                     <p>The circle of skin health consists of highly effective professional treatments perfectly customized to specific skin conditions.</p>
-                                    <a href="javascript:void(0);" class="shortcode_button">Read More</a>
-                                </div>
+                                    <!-- Trigger the modal with a button -->
+                                    <button type="button" class="shortcode_button" data-toggle="modal" data-target="#ipeel-RM">Read More</button>
+                              </div>
                             </div>
                             <div class="item-service block">
                             	<img src="<%= asset_path('service/3.jpg') %>" alt="">
@@ -280,7 +284,8 @@
                                     <h4>Body Procedures</h4>
                                     <div class="separator"></div>
                                     <p>We offer a variety of treatments which are effective in sculpting your body, eliminating unwanted fat and cellulite.</p>
-                                    <a href="javascript:void(0);" class="shortcode_button">Read More</a>
+                                    <!-- Trigger the modal with a button -->
+                                    <button type="button" class="shortcode_button" data-toggle="modal" data-target="#bodyprocedures-RM">Read More</button>
                                 </div>
                             </div>
                             <div class="item-service block">
@@ -289,7 +294,8 @@
                                     <h4>Skin Care Products</h4>
                                     <div class="separator"></div>
                                     <p>Our skin care experts will help you find the right type of skin care products to suite your skin care needs.</p>
-                                    <a href="javascript:void(0);" class="shortcode_button">Read More</a>
+                                    <!-- Trigger the modal with a button -->
+                                    <button type="button" class="shortcode_button" data-toggle="modal" data-target="#skincare-RM">Read More</button>
                                 </div>
                             </div>
                             <div class="item-service block">
@@ -298,11 +304,132 @@
                                     <h4>Others</h4>
                                     <div class="separator"></div>
                                     <p>At <strong>La Dolce Vita Med Spa</strong> we also offer eye lash extensions, HCG weight loss treatments, and much more.</p>
-                                    <a href="javascript:void(0);" class="shortcode_button">Read More</a>
+                                    <!-- Trigger the modal with a button -->
+                                    <button type="button" class="shortcode_button" data-toggle="modal" data-target="#others-RM">Read More</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Injectables Modal -->
+                    <div class="modal fade" id="injectables-RM" role="dialog">
+                      <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Facials Modal -->
+                    <div class="modal fade" id="facials-RM" role="dialog">
+                      <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- I-Peel Modal -->
+                    <div class="modal fade" id="ipeel-RM" role="dialog">
+                      <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Body Procedures Modal -->
+                    <div class="modal fade" id="bodyprocedures-RM" role="dialog">
+                      <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Skin Care Modal -->
+                    <div class="modal fade" id="skincare-RM" role="dialog">
+                      <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Others Modal -->
+                    <div class="modal fade" id="others-RM" role="dialog">
+                      <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p>Some text in the modal.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                 </div>
             </div><!-- end .container -->
         </section>
