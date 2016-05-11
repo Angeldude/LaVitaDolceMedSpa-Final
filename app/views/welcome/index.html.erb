@@ -1,6 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Google Font -->
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
   <!-- Font Awesome -->
@@ -13,6 +15,11 @@
   <link href="<%= asset_path('style-pink.css') %>" rel="stylesheet" type="text/css">
   <link href="<%= asset_path('responsive.css') %>" rel="stylesheet" type="text/css">
   <link href="<%= asset_path('animate.css') %>" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -178,8 +185,31 @@
                               <div class="separator left"></div>
                             </header>
                             <p>A member of our reservations team will be happy to assist you with selecting and scheduling your treatments appropriately. Please call us at 786-797-1452.</p>
-							<p>La Dolce Vita Med Spa is one of the largest full-service aesthetics company in the nation, with one of the finest reputations in the industry. We continue to grow because our focus has always been on our clients, and providing them with exceptional service, efficacy and safety in a comfortable, spa-like atmosphere. Under the oversight of our Medical Directors, our treatment professionals all maintain strict safety standards and use the most advanced technology to help you look and feel your best.</p>
-                            <a href="javascript:void(0);" class="shortcode_button">Spa Policy</a>
+							              <p>La Dolce Vita Med Spa is one of the largest full-service aesthetics company in the nation, with one of the finest reputations in the industry. We continue to grow because our focus has always been on our clients, and providing them with exceptional service, efficacy and safety in a comfortable, spa-like atmosphere. Under the oversight of our Medical Directors, our treatment professionals all maintain strict safety standards and use the most advanced technology to help you look and feel your best.</p>
+
+                            <!-- Trigger the modal with a button -->
+                            <button type="button" class="shortcode_button" data-toggle="modal" data-target="#spaPolicy">Spa Policy</button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="spaPolicy" role="dialog">
+                              <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Modal Header</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>Some text in the modal.</p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col_img"></div>
