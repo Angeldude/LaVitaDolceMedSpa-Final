@@ -82,6 +82,14 @@ p {
 	padding: 0;
 	color:#666;
 }
+.top-title {
+	font-family: 'Great Vibes', Helvetica, sans-serif;
+	color: #ee61a4;
+	font-weight:600;
+	font-size:48px;
+	line-height:50px;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+}
 strong { font-weight: 700;
 }
 .center { text-align: center;
