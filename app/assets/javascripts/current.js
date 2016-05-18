@@ -171,7 +171,7 @@ jQuery(document).ready(function() {
 		var str = $(this).serialize();
 		$.ajax({
 			type: "POST",
-			url: "<%= asset_path('contact_form/contact_process.php') %>",
+			url: "<%= asset_path('contact_process.php') %>",
 			data: str,
 			success: function(msg) {
 				// Message Sent - Show the 'Thank You' message and hide the form

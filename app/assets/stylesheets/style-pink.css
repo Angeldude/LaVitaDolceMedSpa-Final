@@ -513,7 +513,7 @@ header .background img, header .background video {
 	position:relative;
 }
 .about_block .col_img {
-	background:url(img_about.jpg) no-repeat center center;
+	background:url(spa-center.jpg) no-repeat center center;
 	background-size:cover;
 	position:absolute;
 	top:0px;
