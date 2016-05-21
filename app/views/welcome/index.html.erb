@@ -76,14 +76,14 @@
                     <ul class="slides">
                         <li>
                         	<div class="slideshow-overlay"></div>
-                            <img src="<%= asset_path('slider/image.jpeg') %>" alt="" class="slide_bg" />
+                            <img src="<%= asset_path('slider/image.jpg') %>" alt="" class="slide_bg" />
                             <div class="full_slider_caption">
                                 <div class="container"></div>
                             </div>
                         </li>
                         <li>
                         	<div class="slideshow-overlay"></div>
-                            <img src="<%= asset_path('slider/2.jpg') %>" alt="" class="slide_bg" />
+                            <img src="<%= asset_path('slider/gentlemen-facial.jpg') %>" alt="" class="slide_bg" />
                             <div class="full_slider_caption">
                                 <div class="container">
                                 	<div class="cont">
@@ -96,9 +96,9 @@
                         </li>
                         <li>
                         	<div class="slideshow-overlay"></div>
-                            <img src="<%= asset_path('slider/3.jpg') %>" alt="" class="slide_bg" />
+                            <img src="<%= asset_path('slider/facials.png') %>" alt="" class="slide_bg" />
                             <div class="full_slider_caption">
-                                <div class="container">
+                                <br><br><br><div class="container">
                                 	<div class="cont">
                                     	Enjoy our Services
                                         <div class="title">La Dolce Vita Med Spa</div>
@@ -130,7 +130,7 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-4">
                         <div class="icon-banner">
-                        	<a href="javascript:void(0);" data-toggle="modal" data-target="#facials">
+                        	<a href="#" data-toggle="modal" data-target="#facials">
                                 <div class="icon">
                                 	<img alt="" src="<%= asset_path('icons/facials.png') %>">
                                 </div>
@@ -142,7 +142,7 @@
                     </div>
                     <div class="col-md-4 col-sm-4">
                         <div class="icon-banner">
-                        	<a href="javascript:void(0);" data-toggle="modal" data-target="#injectables">
+                        	<a href="#" data-toggle="modal" data-target="#injectables">
                                 <div class="icon">
                                 	<img alt="" src="<%= asset_path('icons/injectables.png') %>">
                                 </div>
@@ -154,7 +154,7 @@
                     </div>
                     <div class="col-md-4 col-sm-4">
                         <div class="icon-banner">
-                        	<a href="javascript:void(0);" data-toggle="modal" data-target="#others">
+                        	<a href="#" data-toggle="modal" data-target="#others">
                                 <div class="icon">
                                 	<img alt="" src="<%= asset_path('icons/other.png') %>">
                                 </div>
@@ -492,8 +492,8 @@
                                 <span>SERVICES</span>
                               <div class="separator left"></div>
                             </header>
-                            <p>Take advantage of our relaxation spaces to gather with friends.</p>
-							<p>We recommend the following order for treatments and services:</p>
+                            <p>Take advantage of our relaxation spaces.</p>
+							<p>We recommend the following treatments and services:</p>
                         	<div class="customNavigation">
                             	<a class="btn-prev"><i class="fa fa-angle-left"></i></a>
                             	<a class="btn-next"><i class="fa fa-angle-right"></i></a>
@@ -960,9 +960,10 @@
                             <h4 class="modal-title">Perfect Skin is Just a Peel Away!</h4>
                           </div>
                           <div class="modal-body">
-                            <p><strong>The Perfect Derma Peel</strong> is the only medium depth medical grade peel that features the powerful anti-oxidant <strong>Glutathione</strong> for superior skin lightening and anti-aging benefits.</p>
 
-                          <br>
+                          <strong>The Perfect Derma Peel</strong> is the only medium depth medical grade peel that features the powerful anti-oxidant <strong>Glutathione</strong> for superior skin lightening and anti-aging benefits.
+
+                          <br><br>
                           <strong>The Perfect Derma Peel will:</strong>
                           <ul>
                             <li>Improve the overall tone, texture and clarity of the skin.</li>
@@ -973,18 +974,22 @@
                             <li>Stimulate collagen production for firmer, younger looking skin.</li>
                           </ul>
 
-                          <p><strong>The Perfect Derma Peel</strong> may be used to treat body areas such as the chest, arms, hands & back.</p>
+                          <br><strong>The Perfect Derma Peel</strong> may be used to treat body areas such as the chest, arms, hands & back.
 
-                          <p>ADD IMAGE HERE!!!!!</p>
+                          <br><br>
+                          <img src="<%= asset_path('modal/perfect-derma-peel.jpg') %>">
 
+                          <br>
                           <strong>Key Ingredients:</strong>
-                          <p>TCA, Retinoic, Salicylic & Kojic Acids, Phenol, Glutathione & Vitamin C.</p>
+                          TCA, Retinoic, Salicylic & Kojic Acids, Phenol, Glutathione & Vitamin C.
 
-                          <p>Glutathione is a well documented anti aging antioxidant produced by the human body, but production deminishes with age & exposure to enviromental stress. This antioxidant fights free radical damage, enhances cellular health & inhibits the production of melanin for clearer, brighter skin. <strong>The Perfect Derma Peel</strong> is the only peel available that features Glutathione.</p>
+                          Glutathione is a well documented anti aging antioxidant produced by the human body, but production deminishes with age & exposure to enviromental stress. This antioxidant fights free radical damage, enhances cellular health & inhibits the production of melanin for clearer, brighter skin. <strong>The Perfect Derma Peel</strong> is the only peel available that features Glutathione.
 
-                          <p>ADD IMAGE HERE!!!!!</p>
+                          <br><br>
+                          <img src="<%= asset_path('modal/home-care-kit.jpg') %>"
 
-                          <p>Use the Patient Home Care Kit (included with your treatment) to properly care for your skin post peel. This kit includes two post peel Towelettes and the Perfect Derma Moisturizer. The <strong>Patient Home Care Kit</strong> is designed to ensure and easy peel process & optimal results.</p>
+                          <br>
+                          Use the Patient Home Care Kit (included with your treatment) to properly care for your skin post peel. This kit includes two post peel Towelettes and the Perfect Derma Moisturizer. The <strong>Patient Home Care Kit</strong> is designed to ensure and easy peel process & optimal results.
                           </div>
                           <div class="modal-footer" style='background-color: #ee61a4'>
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -1066,13 +1071,13 @@
                                               <a href="https://www.twitter.com/ladolcevitaspa_"             class="soc-t"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
                                               <a href="https://plus.google.com/116386761425916871474/posts" class="soc-g"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
                                               <a href="https://www.instagram.com/ladolcevitamedspa"         class="soc-ig"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                            	<a href="javascript:void(0);" class="soc-f">f</a>
-                                              <a href="javascript:void(0);" class="soc-t">t</a>
-                                              <a href="javascript:void(0);" class="soc-g">g</a>
-                                              <a href="javascript:void(0);" class="soc-n">n</a>
-                                              <a href="javascript:void(0);" class="soc-v">v</a>
-                                              <a href="javascript:void(0);" class="soc-r">r</a>
-                                              <a href="javascript:void(0);" class="soc-i">i</a>
+                                            	<a href="#" class="soc-f">f</a>
+                                              <a href="#" class="soc-t">t</a>
+                                              <a href="#" class="soc-g">g</a>
+                                              <a href="#" class="soc-n">n</a>
+                                              <a href="#" class="soc-v">v</a>
+                                              <a href="#" class="soc-r">r</a>
+                                              <a href="#" class="soc-i">i</a>
                                             </div> -->
                                         </div>
                                     </div>
@@ -1096,13 +1101,13 @@
                                               <a href="https://www.twitter.com/ladolcevitaspa_"             class="soc-t"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
                                               <a href="https://plus.google.com/116386761425916871474/posts" class="soc-g"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
                                               <a href="https://www.instagram.com/ladolcevitamedspa"         class="soc-ig"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                              <a href="javascript:void(0);" class="soc-f">f</a>
-                                              <a href="javascript:void(0);" class="soc-t">t</a>
-                                              <a href="javascript:void(0);" class="soc-g">g</a>
-                                              <a href="javascript:void(0);" class="soc-n">n</a>
-                                              <a href="javascript:void(0);" class="soc-v">v</a>
-                                              <a href="javascript:void(0);" class="soc-r">r</a>
-                                              <a href="javascript:void(0);" class="soc-i">i</a>
+                                              <a href="#" class="soc-f">f</a>
+                                              <a href="#" class="soc-t">t</a>
+                                              <a href="#" class="soc-g">g</a>
+                                              <a href="#" class="soc-n">n</a>
+                                              <a href="#" class="soc-v">v</a>
+                                              <a href="#" class="soc-r">r</a>
+                                              <a href="#" class="soc-i">i</a>
                                             </div> -->
                                         </div>
                                     </div>
@@ -1126,13 +1131,13 @@
                                               <a href="https://www.twitter.com/ladolcevitaspa_"             class="soc-t"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
                                               <a href="https://plus.google.com/116386761425916871474/posts" class="soc-g"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
                                               <a href="https://www.instagram.com/ladolcevitamedspa"         class="soc-ig"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                          	  <a href="javascript:void(0);" class="soc-f">f</a>
-                                              <a href="javascript:void(0);" class="soc-t">t</a>
-                                              <a href="javascript:void(0);" class="soc-g">g</a>
-                                              <a href="javascript:void(0);" class="soc-n">n</a>
-                                              <a href="javascript:void(0);" class="soc-v">v</a>
-                                              <a href="javascript:void(0);" class="soc-r">r</a>
-                                              <a href="javascript:void(0);" class="soc-i">i</a>
+                                          	  <a href="#" class="soc-f">f</a>
+                                              <a href="#" class="soc-t">t</a>
+                                              <a href="#" class="soc-g">g</a>
+                                              <a href="#" class="soc-n">n</a>
+                                              <a href="#" class="soc-v">v</a>
+                                              <a href="#" class="soc-r">r</a>
+                                              <a href="#" class="soc-i">i</a>
                                             </div> -->
                                         </div>
                                     </div>
@@ -1216,62 +1221,57 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="item col-md-4 col-sm-4 col-xs-12 therapy">
-                            <a href="<%= asset_path('portfolio/zoom/5.jpg') %>" class="prettyPhoto" data-rel="prettyPhoto[portfolio55]">
-                                <img src="<%= asset_path('portfolio/5.jpg') %>" alt="">
+                        <div class="item col-md-4 col-sm-4 col-xs-12">
+                            <a href="<%= asset_path('portfolio/zoom/ultra-cavitation.jpg') %>" class="prettyPhoto" data-rel="prettyPhoto[portfolio55]">
+                                <img src="<%= asset_path('portfolio/ultra-cavitation.jpg') %>" alt="">
                                 <div class="caption">
                                     <div class="info">
-                                        <h4>Olistic Therapy</h4>
+                                        <h4>Ultra Cavitation</h4>
                                         <div class="separator"></div>
-                                        <p>Special Olistic Therapy</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="item col-md-4 col-sm-4 col-xs-12 massage therapy">
-                            <a href="<%= asset_path('portfolio/zoom/6.jpg') %>" class="prettyPhoto" data-rel="prettyPhoto[portfolio55]">
-                                <img src="<%= asset_path('portfolio/6.jpg') %>" alt="">
+                        <div class="item col-md-4 col-sm-4 col-xs-12">
+                            <a href="<%= asset_path('portfolio/zoom/electro-cautery.jpg') %>" class="prettyPhoto" data-rel="prettyPhoto[portfolio55]">
+                                <img src="<%= asset_path('portfolio/electro-cautery.jpg') %>" alt="">
                                 <div class="caption">
                                     <div class="info">
-                                        <h4>Traditional Massage</h4>
+                                        <h4>Electro Cautery</h4>
                                         <div class="separator"></div>
-                                        <p>Traditional Body Massage.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="item col-md-4 col-sm-4 col-xs-12 mud therapy">
-                            <a href="<%= asset_path('portfolio/zoom/7.jpg') %>" class="prettyPhoto" data-rel="prettyPhoto[portfolio55]">
-                                <img src="<%= asset_path('portfolio/7.jpg') %>" alt="">
+                        <div class="item col-md-4 col-sm-4 col-xs-12">
+                            <a href="<%= asset_path('portfolio/zoom/anti-cellulite.jpg') %>" class="prettyPhoto" data-rel="prettyPhoto[portfolio55]">
+                                <img src="<%= asset_path('portfolio/anti-cellulite.jpg') %>" alt="">
                                 <div class="caption">
                                     <div class="info">
-                                        <h4>Mud Therapy</h4>
+                                        <h4>Anti-Cellulite</h4>
                                         <div class="separator"></div>
-                                        <p>Total Mud Therapy.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="item col-md-4 col-sm-4 col-xs-12 massage cosmetic">
-                            <a href="<%= asset_path('portfolio/zoom/8.jpg') %>" class="prettyPhoto" data-rel="prettyPhoto[portfolio55]">
-                                <img src="<%= asset_path('portfolio/8.jpg') %>" alt="">
+                        <div class="item col-md-4 col-sm-4 col-xs-12 injectables">
+                            <a href="<%= asset_path('portfolio/zoom/injectable.jpg') %>" class="prettyPhoto" data-rel="prettyPhoto[portfolio55]">
+                                <img src="<%= asset_path('portfolio/injectable.jpg') %>" alt="">
                                 <div class="caption">
                                     <div class="info">
-                                        <h4>Traditional Massage</h4>
+                                        <h4>Platelet Rich Plasma</h4>
                                         <div class="separator"></div>
-                                        <p>Traditional Body Massage</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="item col-md-4 col-sm-4 col-xs-12 massage cosmetic">
-                            <a href="<%= asset_path('portfolio/zoom/9.jpg') %>" class="prettyPhoto" data-rel="prettyPhoto[portfolio55]">
-                                <img src="<%= asset_path('portfolio/9.jpg') %>" alt="">
+                        <div class="item col-md-4 col-sm-4 col-xs-12 facials">
+                            <a href="<%= asset_path('portfolio/zoom/ipeel.jpg') %>" class="prettyPhoto" data-rel="prettyPhoto[portfolio55]">
+                                <img src="<%= asset_path('portfolio/ipeel.jpg') %>" alt="">
                                 <div class="caption">
                                     <div class="info">
-                                        <h4>Facial Treatment</h4>
+                                        <h4>IPeel</h4>
                                         <div class="separator"></div>
-                                        <p>Full Facial Treatment.</p>
                                     </div>
                                 </div>
                             </a>
@@ -1309,7 +1309,7 @@
                                 <li>Hands & Feet</li>
                             </ul>
                         </div>
-                        <a href="javascript:void(0);" class="shortcode_button">Buy Now</a>
+                        <a href="#" class="shortcode_button">Buy Now</a>
                     </div>
                     <div class="price-item optimal">
                         <div class="type"><span>Overnight Spa Package</span></div>
@@ -1323,7 +1323,7 @@
                                 <li>Hands & Feet</li>
                             </ul>
                         </div>
-                        <a href="javascript:void(0);" class="shortcode_button">Buy Now</a>
+                        <a href="#" class="shortcode_button">Buy Now</a>
                     </div>
                     <div class="price-item">
                         <div class="type"><span>Three Night Package</span></div>
@@ -1337,7 +1337,7 @@
                                 <li>Hands & Feet</li>
                             </ul>
                         </div>
-                        <a href="javascript:void(0);" class="shortcode_button">Buy Now</a>
+                        <a href="#" class="shortcode_button">Buy Now</a>
                     </div>
                 </div>
             </div> -->
@@ -1399,7 +1399,7 @@
                                             <h4>New Service</h4>
                                             <div class="separator left"></div>
                                             <p>Guests can relax at The Oasis while enjoying a variety of fresh lunch choices and decadent desserts prepared by our award-winning culinary team. . The buffet menu features refreshing juices, salads, and healthy wraps. Also enjoy our selection of cocktails and wines for an additional charge. </p>
-                                            <a href="javascript:void(0);" class="shortcode_button">Read More</a>
+                                            <a href="#" class="shortcode_button">Read More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1448,7 +1448,10 @@
                             <p>We value your opinion regarding our service and facilities. Please feel free to contact us with your thoughts.</p>
                         </div>
                     </div>
-                    <div class="col-md-6">
+
+                    <%= render 'messages/new' %>
+
+                    <!-- <div class="col-md-6">
                     	<div class="contact_form block">
                             <div class="row">
                                 <div class="col-md-12 col-sm-12">
@@ -1478,7 +1481,7 @@
                                 </form>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-md-3">
                     	<div class="info-block bg_black block">
                         	<header class="head_section">
@@ -1520,13 +1523,13 @@
                                 <h3>Recent Posts</h3>
                             </div>
                             <ul class="list-posts">
-                                <li>
+                                <!-- <li>
                                 	<p>Enjoy a classic manicure or pedicure with a chocolate sugar exfoliation, chocolate mask for the feet.</p>
-                                    <span class="date">13, Nov. 2015</span><a href="javascript:void(0);">By Admin</a>
-                                </li>
+                                    <span class="date">13, Nov. 2015</span><a href="#">By Admin</a>
+                                </li> -->
                                 <li>
                                 	<p>Give your neck and décolleté an instant lift with this exclusive treatment.</p>
-                                    <span class="date">14, Nov. 2015</span><a href="javascript:void(0);">By Admin</a>
+                                    <span class="date">Feb 25, 2016.</span><a href="#">By Admin</a>
                                 </li>
                             </ul>
                         </div>
@@ -1605,9 +1608,9 @@
 
 	<!-- portfolio load more button-->
 		items_set = [
-			{src :'assets/portfolio/10.jpg', url :'javascript:void(0);', sortcategory:'cosmetic', zoomurl:'assets/portfolio/zoom/10.jpg', title:'Cosmetic', description:'Ut enim ad minima veniam, quis nostrum exercitationem ullam.'},
-			{src :'assets/portfolio/11.jpg', url :'javascript:void(0);', sortcategory:'massage', zoomurl:'assets/portfolio/zoom/11.jpg', title:'Hot spring', description:'Ut enim ad minima veniam, quis nostrum exercitationem ullam.'},
-			{src :'assets/portfolio/12.jpg', url :'javascript:void(0);', sortcategory:'therapy', zoomurl:'assets/portfolio/zoom/12.jpg', title:'Therapy', description:'Ut enim ad minima veniam, quis nostrum exercitationem ullam.'}
+			{src :'assets/portfolio/10.jpg', url :'#', sortcategory:'cosmetic', zoomurl:'assets/portfolio/zoom/10.jpg', title:'Cosmetic', description:'Ut enim ad minima veniam, quis nostrum exercitationem ullam.'},
+			{src :'assets/portfolio/11.jpg', url :'#', sortcategory:'massage', zoomurl:'assets/portfolio/zoom/11.jpg', title:'Hot spring', description:'Ut enim ad minima veniam, quis nostrum exercitationem ullam.'},
+			{src :'assets/portfolio/12.jpg', url :'#', sortcategory:'therapy', zoomurl:'assets/portfolio/zoom/12.jpg', title:'Therapy', description:'Ut enim ad minima veniam, quis nostrum exercitationem ullam.'}
 		];
 		jQuery('.portfolio-list').portfolio_addon({
 			load_count : 3,

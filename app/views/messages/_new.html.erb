@@ -1,0 +1,64 @@
+<%= form_for @message, class: 'row', url: welcome_path do |message_form| %>
+
+  <div class="col-md-6">
+    <div class="contact_form block">
+      <div class="row">
+          <div class="col-md-12 col-sm-12">
+              <div id="note"></div>
+          </div>
+      </div>
+
+      <div class="col-md-6 col-sm-6">
+        <%= message_form.text_field :name, placeholder: "Name", :class => 'inp', :name => 'name' %>
+      </div>
+
+      <div class="col-md-6 col-sm-6">
+        <%= message_form.email_field :email, placeholder: "Email", :class => 'inp', :name => 'email' %>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="col-md-6 col-sm-6">
+        <%= message_form.text_field :phone, placeholder: "Phone", :class => 'inp', :name => 'phone' %>
+      </div>
+
+      <div class="col-md-6 col-sm-6">
+        <%= message_form.text_field :subject, placeholder: "Subject", :class => 'inp', :name => 'subject' %>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="col-md-12">
+        <%= message_form.text_area :message, placeholder: 'Message', :class => 'inp', :name => 'message', :rows =>'4' %>
+      </div>
+
+      <div class="col-md-12">
+        <%= message_form.submit "Submit", :class => 'shortcode_button' %>
+      </div>
+    </div>
+  </div>
+
+<% end %>
+
+        <!-- <div id="fields">
+            <form id="ajax-contact-form" class="row" action="#">
+                <div class="col-md-6 col-sm-6">
+                    <input class="inp" type="text" name="name" placeholder="Name" title="Name">
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <input class="inp" type="text" name="email" placeholder="Email" title="Email">
+                </div>
+                <div class="clear"></div>
+                <div class="col-md-6 col-sm-6">
+                    <input class="inp" type="text" name="phone" placeholder="Phone" title="Phone">
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <input class="inp" type="text" name="subject" placeholder="Subject" title="Subject">
+                </div>
+                <div class="clear"></div>
+                <div class="col-md-12">
+                    <textarea class="inp" rows="4" name="message" placeholder="Message" title="Message"></textarea>
+                </div>
+                <div class="col-md-12"><input class="shortcode_button" type="submit" value="Send message"></div>
+            </form>
+        </div> -->
