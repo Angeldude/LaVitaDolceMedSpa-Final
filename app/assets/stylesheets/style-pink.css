@@ -276,7 +276,7 @@ a.menu_toggler {display:none;
 	right:0;
     margin: 0;
     text-shadow: none;
-	opacity: 1;
+	opacity: 0.6;
 	float:none;
 	color:#fff;
 	font-size:26px;
