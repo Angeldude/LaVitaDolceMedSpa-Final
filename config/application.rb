@@ -27,8 +27,8 @@ module Lavitadolce
       address: "smtp.gmail.com",
       port: 587,
       domain: "localhost:3000",
-      user_name: "j.naranjojr@gmail.com",
-      password: "pw",
+      user_name: ['GMAIL_USER'],
+      password: ['GMAIL_PW'],
       authentication: :plain,
       enable_starttls_auto: true
     }
