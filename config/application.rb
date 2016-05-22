@@ -28,7 +28,7 @@ module Lavitadolce
       port: 587,
       domain: "localhost:3000",
       user_name: "j.naranjojr@gmail.com",
-      password: "j0rG3jR6039",
+      password: "pw",
       authentication: :plain,
       enable_starttls_auto: true
     }
