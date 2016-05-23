@@ -24,11 +24,11 @@ module Lavitadolce
     config.active_record.raise_in_transactional_callbacks = true
 
     config.action_mailer.smtp_settings = {
-      address: "smtp.gmail.com",
+      address: "smtp.yahoo.com",
       port: 587,
-      domain: "localhost:3000",
-      user_name: ['GMAIL_USER'],
-      password: ['GMAIL_PW'],
+      domain: "yahoo.com",
+      user_name: "thisisonlyatest210@yahoo.com",
+      password: "j0rG3jR6039",
       authentication: :plain,
       enable_starttls_auto: true
     }

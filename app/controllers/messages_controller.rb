@@ -8,8 +8,8 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
 
     if @message.valid?
-      MessageMailer.new_message(@message).deliver
-      render 'welcome/index', notice: "Your messages has been sent."
+      MessageMailer.new_message(@message).deliver_now
+      render 'welcome/index', alert: "Your messages has been sent."
     else
       flash[:alert] = "An error occurred while delivering this message."
       render :error
