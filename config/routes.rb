@@ -7,8 +7,8 @@ Rails.application.routes.draw do
 
   post 'welcome' => 'messages#create'
     
-    get 'products' => 'products#index'
-    get 'things' => 'things#index'
+  get 'products' => 'products#index'
+  get 'listing' => 'products#listing'
 #
 #    resources :products do
 #        get 'prod' => 'products#prods'
