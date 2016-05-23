@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   post 'welcome' => 'messages#create'
 
+  get 'products' => 'products#index'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
