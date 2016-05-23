@@ -26,7 +26,34 @@ products = [
         benefits:
         directions:
         image:
-        }
+        },
+    {
+        collection:
+        name:
+        description:
+        skintype:
+        benefits:
+        directions:
+        image:   
+        },
+    {
+        collection:
+        name:
+        description:
+        skintype:
+        benefits:
+        directions:
+        image:
+        },
+    {
+        collection:
+        name:
+        description:
+        skintype:
+        benefits:
+        directions:
+        image:
+        },
     ]
 
 products.each do |item|
