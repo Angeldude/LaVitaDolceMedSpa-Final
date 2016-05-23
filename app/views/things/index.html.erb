@@ -1,0 +1,6 @@
+<% params %>
+<% @products.select do |item| %>
+<% if item.collection == params[:collection] %>
+<li><%= item.name %></li>
+<% end %>
+<% end %>

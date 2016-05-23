@@ -6,8 +6,13 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   post 'welcome' => 'messages#create'
-
-  get 'products' => 'products#index'
+    
+    get 'products' => 'products#index'
+    get 'things' => 'things#index'
+#
+#    resources :products do
+#        get 'prod' => 'products#prods'
+#    end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
