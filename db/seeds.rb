@@ -17,9 +17,24 @@ products = [
         benefits: "Universal 3-in-1 body and facial cleanser that rinses away makeup and oil, balances the pH of your skin eliminating the need for a toner. A gentle glycolic acid blend begins the exfoliating process to reveal smoother skin.",
         directions: "Wet hands and apply a liberal amount of body and facial cleanser to palm of hands. Cleanse and massage for 1 minute. Rinse with tepid water, followed by a cold water splash. Repeat if necessary for additional exfoliating. Use morning and evening for best results",
         image: "face-cleanser"
+        },
+    {
+        collection:
+        name:
+        description:
+        skintype:
+        benefits:
+        directions:
+        image:
         }
     ]
 
 products.each do |item|
-    Product.create(collection: item[:collection]) 
+    Product.create(collection: item[:collection],
+        name: item[:name],
+        description: item[:description],
+        skintype: item[:skintype],
+        benefits: item[:benefits],
+        directions: item[:directions],
+        image: item[:image]) 
 end
