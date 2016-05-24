@@ -46,13 +46,13 @@ products = [
         image: "Ageless-Total_Eye-Lift-Creme-NEW_grande"
         },
     {
-        collection: "ageless"
-        name: "total retinol A creme"
-        description: 
-        skintype:
-        benefits:
-        directions:
-        image:
+        collection: "ageless",
+        name: "total retinol A creme",
+        description: "A highly concentrated blend of retinol and polypeptides that resurface, rejuvenate, and repair aging and acne prone skin. Paraben free.",
+        skintype: "Aging, oily/acne, sun damaged.",
+        benefits: "Retinol creme with potent anti-aging properties to rejuvenate and repair aging and all levels of acne prone skin. Image Exclusive peptide blend significantly reduces fine lines for visibly tighter skin. Shea Butter balances skin and helps to retain moisture level",
+        directions: "Apply retinol creme directly to cleansed skin in evening, or mix with any Image product for additional anti-aging benefits.",
+        image: "ageless-retinol"
         },
      {
         collection:
