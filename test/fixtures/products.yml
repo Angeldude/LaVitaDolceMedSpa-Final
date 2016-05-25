@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  collection: MyString
+  name: MyString
+  description: MyText
+  skintype: MyText
+  benefits: MyText
+  directions: MyText
+
+two:
+  collection: MyString
+  name: MyString
+  description: MyText
+  skintype: MyText
+  benefits: MyText
+  directions: MyText

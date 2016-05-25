@@ -7,6 +7,13 @@ Rails.application.routes.draw do
 
   post '/' => 'messages#create'
 
+  get 'products' => 'products#index'
+  get 'listing' => 'products#listing'
+#
+#    resources :products do
+#        get 'prod' => 'products#prods'
+#    end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
