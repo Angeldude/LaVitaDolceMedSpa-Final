@@ -24,10 +24,10 @@ module Lavitadolce
     config.active_record.raise_in_transactional_callbacks = true
 
     config.action_mailer.smtp_settings = {
-      address: "smtp.yahoo.com",
+      address: "smtp.sendgrid.net",
       port: 587,
-      domain: "yahoo.com",
-      user_name: "thisisonlyatest210@yahoo.com",
+      domain: "example.com",
+      user_name: "naranhoe",
       password: "j0rG3jR6039",
       authentication: :plain,
       enable_starttls_auto: true

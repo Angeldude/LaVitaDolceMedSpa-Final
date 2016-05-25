@@ -1,4 +1,19 @@
-<%= form_for @message, class: 'row', url: root_path do |message_form| %>
+<div class="container block-wrap wow fadeInUp">
+  <div class="row">
+      <div class="col-md-3">
+          <div class="info-block bg_colored block">
+              <header class="head_section">
+                  <div class="icon-write">
+                      <i class="pe-5x pe-va pe-7s-diamond"></i>
+                    </div>
+                  <h2>WRITE US</h2>
+                    <div class="separator left"></div>
+                </header>
+                <p>We value your opinion regarding our service and facilities. Please feel free to contact us with your thoughts.</p>
+            </div>
+        </div>
+
+<%= form_for @message, id: 'ajax-contact-form', class: 'row', url: root_path do |message_form| %>
 
   <div class="col-md-6">
     <div class="contact_form block">
@@ -39,6 +54,26 @@
   </div>
 
 <% end %>
+
+<div class="col-md-3">
+  <div class="info-block bg_black block">
+      <header class="head_section">
+          <div class="icon-write">
+              <i class="pe-5x pe-va pe-7s-diamond"></i>
+            </div>
+          <h2>CONTACT</h2>
+            <span>DETAILS</span>
+          <div class="separator left"></div>
+        </header>
+        <i class="fa fa-home" aria-hidden="true">  5931 NW 173rd Dr. Suite #7, Miami, FL 33015</i>
+        <br><br>
+        <i class="fa fa-phone" aria-hidden="true">  (786)797-1452</i>
+        <br><br>
+        <i class="fa fa-envelope" aria-hidden="true">  ladolcevitaspa1@gmail.com</i>
+    </div>
+  </div>
+</div>
+</div><!-- end .container -->
 
         <!-- <div id="fields">
             <form id="ajax-contact-form" class="row" action="#">

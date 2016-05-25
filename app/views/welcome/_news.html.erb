@@ -1,0 +1,81 @@
+<div class="container block-wrap bg_gray">
+  <div class="row carousel-box carousel-full">
+      <div class="col-md-3">
+          <div class="control-block bg_black block">
+              <header class="head_section">
+                  <div class="icon-write">
+                      <i class="pe-5x pe-va pe-7s-diamond"></i>
+                    </div>
+                  <h2>Recent</h2>
+                    <span>News</span>
+                  <div class="separator left"></div>
+                </header>
+                <p>The Oasis, our spa guest-only lounge and restaurant, overlooks the beautiful gardens of The Hotel.</p>
+              <div class="customNavigation">
+                <a class="btn-prev"><i class="fa fa-angle-left"></i></a>
+                <a class="btn-next"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+          <div class="owl-carousel">
+                <div class="item-full">
+                  <div class="row">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="img block">
+                              <img src="<%= asset_path('news/1.jpg') %>" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-8">
+                            <div class="cont block">
+                                <h4>The Oasis</h4>
+                                <div class="separator left"></div>
+                                <p>The Oasis, our spa guest-only lounge and restaurant, overlooks the beautiful gardens of The Hotel. The buffet at The Oasis is available on an a la carte basis for $20, plus tax and gratuity.</p>
+                                <!-- Trigger the modal with a button -->
+                                <button type="button" class="shortcode_button" data-toggle="modal" data-target="#oasis">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-full">
+                  <div class="row">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="img block">
+                              <img src="<%= asset_path('news/2.jpg') %>" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-8">
+                            <div class="cont block">
+                                <h4>New Service</h4>
+                                <div class="separator left"></div>
+                                <p>Guests can relax at The Oasis while enjoying a variety of fresh lunch choices and decadent desserts prepared by our award-winning culinary team. . The buffet menu features refreshing juices, salads, and healthy wraps. Also enjoy our selection of cocktails and wines for an additional charge. </p>
+                                <a href="#" class="shortcode_button">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Oasis Modal -->
+            <div class="modal fade" id="oasis" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+    </div>
+</div>
