@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
   <!-- Great Vibes Font -->
   <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
 
@@ -153,25 +155,23 @@
   <script type="text/javascript" src="<%= asset_path('current.js') %>"></script>
   <script type="text/javascript" src="<%= asset_path('wow.min.js') %>"></script>
 
-
-
   <!-- animation on scrolling-->
 	<script>
   	new WOW().init();
   </script>
 
-  <script>
+  <!-- <script> -->
 	<!-- portfolio load more button-->
-		items_set = [
-			{src :'assets/portfolio/10.jpg', url :'#', sortcategory:'cosmetic', zoomurl:'assets/portfolio/zoom/10.jpg', title:'Cosmetic', description:'Ut enim ad minima veniam, quis nostrum exercitationem ullam.'},
-			{src :'assets/portfolio/11.jpg', url :'#', sortcategory:'massage', zoomurl:'assets/portfolio/zoom/11.jpg', title:'Hot spring', description:'Ut enim ad minima veniam, quis nostrum exercitationem ullam.'},
-			{src :'assets/portfolio/12.jpg', url :'#', sortcategory:'therapy', zoomurl:'assets/portfolio/zoom/12.jpg', title:'Therapy', description:'Ut enim ad minima veniam, quis nostrum exercitationem ullam.'}
-		];
-		jQuery('.portfolio-list').portfolio_addon({
-			load_count : 3,
-			items : items_set
-		});
-	</script>
+		<!-- // items_set = [
+		// 	{src :'assets/portfolio/10.jpg', url :'#', sortcategory:'cosmetic', zoomurl:'assets/portfolio/zoom/10.jpg', title:'Cosmetic', description:'Ut enim ad minima veniam, quis nostrum exercitationem ullam.'},
+		// 	{src :'assets/portfolio/11.jpg', url :'#', sortcategory:'massage', zoomurl:'assets/portfolio/zoom/11.jpg', title:'Hot spring', description:'Ut enim ad minima veniam, quis nostrum exercitationem ullam.'},
+		// 	{src :'assets/portfolio/12.jpg', url :'#', sortcategory:'therapy', zoomurl:'assets/portfolio/zoom/12.jpg', title:'Therapy', description:'Ut enim ad minima veniam, quis nostrum exercitationem ullam.'}
+		// ];
+		// jQuery('.portfolio-list').portfolio_addon({
+		// 	load_count : 3,
+		// 	items : items_set
+		// }); -->
+	<!-- </script> -->
 
 	</body>
 </html>

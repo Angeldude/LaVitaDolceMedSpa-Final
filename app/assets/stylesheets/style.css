@@ -362,7 +362,7 @@ a.menu_toggler {display:none;
 	font-size:14px;
 }
 .shortcode_button:hover {
-	background:#2d2e2e;
+	background:#000;
 }
 .shortcode_button.btn-lg {
 	font-size:18px;
