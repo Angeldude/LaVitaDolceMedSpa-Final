@@ -1178,7 +1178,7 @@ textarea:focus:-ms-input-placeholder {
 }
 .footer a {color:#ee61a4;
 }
-.footer a:hover {color:#e0f29b;
+.footer a:hover {color:#000;
 }
 .footer_block {
 	margin-bottom:25px;
