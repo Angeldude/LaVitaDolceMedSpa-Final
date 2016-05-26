@@ -1,10 +1,12 @@
 <% @products.select do |item| %>
   <% if item.collection == params[:collection] %>
-    <li><%= item.name %></li>
-    <li><%= item.description %></li>
-    <li><%= item.skintype %></li>
-    <li><%= item.benefits %></li>
-    <li><%= item.directions %></li>
-    <li><%= item.image %></li>
+   <ul>
+        <li><%= item.name %></li>
+        <li><%= item.description %></li>
+        <li><%= item.skintype %></li>
+        <li><%= item.benefits %></li>
+        <li><%= item.directions %></li>
+       <li><%= image_tag item.image %></li>
+   </ul>
   <% end %>
 <% end %>
