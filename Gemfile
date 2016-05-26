@@ -10,7 +10,6 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'pg', '~> 0.18.4'
 gem 'better_errors', '~> 2.1', '>= 2.1.1'
-gem 'rails_12factor', group: :production
 gem 'dotenv-rails', :groups => [:development, :test]
 
 group :development, :test do
