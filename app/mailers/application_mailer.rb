@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: ['GMAIL_USER']
+  default from: ['YAHOO_USER']
   layout 'mailer'
 end

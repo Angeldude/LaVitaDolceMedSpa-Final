@@ -26,8 +26,8 @@ module Lavitadolce
     config.action_mailer.smtp_settings = {
       address: "smtp.mail.yahoo.com",
       port: 587,
-      user_name: "thisisonlyatest210@yahoo.com",
-      password: "j0rG3jR6039",
+      user_name: ENV['YAHOO_USER'],
+      password: ENV['YAHOO_PW'],
       authentication: :plain,
       enable_starttls_auto: true
     }
