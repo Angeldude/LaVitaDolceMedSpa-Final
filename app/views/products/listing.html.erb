@@ -1,12 +1,6 @@
 <% @products.select do |item| %>
   <% if item.collection == params[:collection] %>
-   <ul>
-        <li><%= item.name %></li>
-        <li><%= item.description %></li>
-        <li><%= item.skintype %></li>
-        <li><%= item.benefits %></li>
-        <li><%= item.directions %></li>
-       <li><%= image_tag item.image %></li>
-   </ul>
+    <p><%= link_to item.name, controller: "products", action: "show", id: item %></p>
   <% end %>
 <% end %>
+<%= link_to 'Back', products_path %>

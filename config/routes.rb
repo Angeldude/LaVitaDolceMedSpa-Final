@@ -9,10 +9,7 @@ Rails.application.routes.draw do
 
   get 'products' => 'products#index'
   get 'listing' => 'products#listing'
-#
-#    resources :products do
-#        get 'prod' => 'products#prods'
-#    end
+  get 'products/:id' => 'products#show'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
