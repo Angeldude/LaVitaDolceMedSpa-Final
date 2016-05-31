@@ -1,56 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-  <!-- Great Vibes Font -->
-  <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
-
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-	<!-- Google Font -->
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Css Files -->
-  <link href="<%= asset_path('bootstrap.css') %>"  rel="stylesheet" type="text/css">
-  <link href="<%= asset_path('plugins.css') %>"    rel="stylesheet" type="text/css">
-  <link href="<%= asset_path('homePopup.css') %>"  rel="stylesheet" type="text/css">
-  <link href="<%= asset_path('style-pink.css') %>" rel="stylesheet" type="text/css">
-  <link href="<%= asset_path('responsive.css') %>" rel="stylesheet" type="text/css">
-  <link href="<%= asset_path('animate.css') %>"    rel="stylesheet" type="text/css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="<%= asset_path('jquery.min.js') %>"></script>
-
-</head>
-<body>
-	<!-- Preloader -->
-    <div id="preloader">
-
-      <div id="status"></div>
-
-    </div>
-  <!--//Preloader -->
-
-  <!-- #page -->
-  <div id="page">
-
-  <!-- header section -->
-  <div id="topping"></div>
-    <section id="top">
-
-      <%= render 'welcome/navmenu'%>
-
-    </section>
-    <!-- //end header section -->
-
-
     <!-- home content -->
     <section id="home">
 
@@ -145,21 +92,6 @@
   <!-- <header class="fixed-menu"></header> -->
 
 
-  <!-- javascript files-->
-	<script type="text/javascript" src="<%= asset_path('jquery.isotope.min.js') %>"></script>
-	<script type="text/javascript" src="<%= asset_path('sorting.js') %>"></script>
-  <script type="text/javascript" src="<%= asset_path('homePopupLoad.js') %>"></script>
-  <script type="text/javascript" src="<%= asset_path('homePopup.js') %>"></script>
-  <script type="text/javascript" src="<%= asset_path('plugins.js') %>"></script>
-  <script type="text/javascript" src="<%= asset_path('current.js') %>"></script>
-  <script type="text/javascript" src="<%= asset_path('wow.min.js') %>"></script>
-
-  <!-- animation on scrolling-->
-	<script>
-  	new WOW().init();
-  </script>
-
-  <!-- <script> -->
 	<!-- portfolio load more button-->
 		<!-- // items_set = [
 		// 	{src :'assets/portfolio/10.jpg', url :'#', sortcategory:'cosmetic', zoomurl:'assets/portfolio/zoom/10.jpg', title:'Cosmetic', description:'Ut enim ad minima veniam, quis nostrum exercitationem ullam.'},
@@ -171,6 +103,3 @@
 		// 	items : items_set
 		// }); -->
 	<!-- </script> -->
-
-	</body>
-</html>

@@ -8,6 +8,8 @@
 	<meta name="author" content="">
 
   <title>La Dolce Vita | Med Spa</title>
+  
+  <%= render 'layouts/head' %>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -15,8 +17,27 @@
 
 </head>
 <body>
+  
+<%= render 'layouts/nav' %>
 
 <%= yield %>
+  
+  
+  <!-- javascript files-->
+	<script type="text/javascript" src="<%= asset_path('jquery.isotope.min.js') %>"></script>
+	<script type="text/javascript" src="<%= asset_path('sorting.js') %>"></script>
+  <script type="text/javascript" src="<%= asset_path('homePopupLoad.js') %>"></script>
+  <script type="text/javascript" src="<%= asset_path('homePopup.js') %>"></script>
+  <script type="text/javascript" src="<%= asset_path('plugins.js') %>"></script>
+  <script type="text/javascript" src="<%= asset_path('current.js') %>"></script>
+  <script type="text/javascript" src="<%= asset_path('wow.min.js') %>"></script>
+
+  <!-- animation on scrolling-->
+	<script>
+  	new WOW().init();
+  </script>
+
+  <!-- <script> -->
 
 </body>
 </html>
