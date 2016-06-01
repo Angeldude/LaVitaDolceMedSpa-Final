@@ -1,6 +1,6 @@
 class MessageMailer < ApplicationMailer
 
-  default from: ENV['YAHOO_USER']
+  default from: ENV['GMAIL_USER']
   default to: "j.naranjojr@gmail.com"
 
   def new_message(message)
