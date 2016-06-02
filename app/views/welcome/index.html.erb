@@ -1,105 +1,98 @@
-    <!-- home content -->
-    <section id="home">
+<!-- home content -->
+<section id="home">
+  
+  <%= render 'welcome/slideshow'%>
+  
+</section>
+<!-- //end home content -->
 
-    	<%= render 'welcome/slideshow'%>
+<!-- start content -->
+<section class="page_section">
+  
+  <%= render 'welcome/headsection'%>
+  
+</section>
+<!-- //end start content -->
 
-    </section>
-    <!-- //end home content -->
+<!-- about content-->
+<section class="page_section" id="about">
+  
+  <%= render 'welcome/about'%>
+  
+</section>
+<!-- //end about content-->
 
-    <!-- start content -->
-    <section class="page_section">
+<!-- services content -->
+<section class="page_section" id="services">
+  
+  <%= render 'welcome/services'%>
+  
+</section>
+<!-- //end services content-->
 
-      <%= render 'welcome/headsection'%>
+<!-- team content -->
+<section class="page_section" id="staff">
+  
+  <%= render 'welcome/team' %>
+  
+</section>
+<!-- //end team content -->
 
-    </section>
-    <!-- //end start content -->
+<!-- portfolio content-->
+<section class="page_section" id="portfolio">
+  
+  <%= render 'welcome/portfolio'%>
+  
+</section>
+<!-- //end portfolio content-->
 
-    <!-- about content-->
-    <section class="page_section" id="about">
-
-        <%= render 'welcome/about'%>
-
-    </section>
-    <!-- //end about content-->
-
-
-    <!-- services content -->
-    <section class="page_section" id="services">
-
-      <%= render 'welcome/services'%>
-
-    </section>
-    <!-- //end services content-->
-
-
-    <!-- team content -->
-    <section class="page_section" id="staff">
-
-      <%= render 'welcome/team' %>
-
-    </section>
-    <!-- //end team content -->
-
-
-    <!-- portfolio content-->
-    <section class="page_section" id="portfolio">
-
-      <%= render 'welcome/portfolio'%>
-
-    </section>
-    <!-- //end portfolio content-->
-
-
-    <!-- pricing content -->
-    <section class="page_section">
-
-      <%# render 'welcome/pricing'%>
-
-    </section>
-    <!-- //end pricing content
+<!-- pricing content -->
+<section class="page_section">
+  
+  <%# render 'welcome/pricing'%>
+  
+</section>
+<!-- //end pricing content
 
 
-    <!-- news content -->
-    <section class="page_section">
-        <%# render 'welcome/news'%>
-    </section>
+<!-- news content -->
+<section class="page_section">
+  <%# render 'welcome/news'%>
+</section>
 
+<!-- contact content-->
+<section class="page_section" id="contact">
+  
+  <%= render 'messages/new' %>
+  
+</section>
+<!-- //end contact content-->
 
-    <!-- contact content-->
-    <section class="page_section" id="contact">
+<!-- map section -->
 
-      <%= render 'messages/new' %>
+<%= render 'welcome/map'%>
 
-    </section>
-    <!-- //end contact content-->
+<!-- /end map section -->
 
+<!--footer-->
 
-    <!-- map section -->
+<%= render 'welcome/footer'%>
 
-      <%= render 'welcome/map'%>
+<!--//footer-->
 
-		<!-- /end map section -->
+</div>
+<!-- end #page -->
 
+<!-- <header class="fixed-menu"></header> -->
 
-    <!--footer-->
-
-      <%= render 'welcome/footer'%>
-
-    <!--//footer-->
-
-  </div><!-- end #page -->
-
-  <!-- <header class="fixed-menu"></header> -->
-
-
-	<!-- portfolio load more button-->
-		<!-- // items_set = [
-		// 	{src :'assets/portfolio/10.jpg', url :'#', sortcategory:'cosmetic', zoomurl:'assets/portfolio/zoom/10.jpg', title:'Cosmetic', description:'Ut enim ad minima veniam, quis nostrum exercitationem ullam.'},
-		// 	{src :'assets/portfolio/11.jpg', url :'#', sortcategory:'massage', zoomurl:'assets/portfolio/zoom/11.jpg', title:'Hot spring', description:'Ut enim ad minima veniam, quis nostrum exercitationem ullam.'},
-		// 	{src :'assets/portfolio/12.jpg', url :'#', sortcategory:'therapy', zoomurl:'assets/portfolio/zoom/12.jpg', title:'Therapy', description:'Ut enim ad minima veniam, quis nostrum exercitationem ullam.'}
-		// ];
-		// jQuery('.portfolio-list').portfolio_addon({
-		// 	load_count : 3,
-		// 	items : items_set
-		// }); -->
-	<!-- </script> -->
+<!-- portfolio load more button-->
+<!-- // items_set = [
+// 	{src :'assets/portfolio/10.jpg', url :'#', sortcategory:'cosmetic', zoomurl:'assets/portfolio/zoom/10.jpg', title:'Cosmetic', description:'Ut enim ad minima veniam, quis nostrum exercitationem ullam.'},
+// 	{src :'assets/portfolio/11.jpg', url :'#', sortcategory:'massage', zoomurl:'assets/portfolio/zoom/11.jpg', title:'Hot spring', description:'Ut enim ad minima veniam, quis nostrum exercitationem ullam.'},
+// 	{src :'assets/portfolio/12.jpg', url :'#', sortcategory:'therapy', zoomurl:'assets/portfolio/zoom/12.jpg', title:'Therapy', description:'Ut enim ad minima veniam, quis nostrum exercitationem ullam.'}
+// ];
+// jQuery('.portfolio-list').portfolio_addon({
+// 	load_count : 3,
+// 	items : items_set
+// }); -->
+<!-- </script> -->

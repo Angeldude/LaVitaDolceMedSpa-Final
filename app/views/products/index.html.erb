@@ -1,16 +1,71 @@
-<h2>What we sell:</h2>
+<header class="head_section center_section">
+    <div class="container">
+        <h2>Our Products</h2>
+        <div class="separator"></div>
+        <p>Lots and lots of beauty products!</p>
+    </div>
+</header>
 
-<%= link_to "Ageless", controller: "products", action: "listing", collection: "ageless" %>
-<%= link_to "Vital-C", controller: "products", action: "listing", collection: "vital-c" %>
-<%= link_to "Ormedic", controller: "products", action: "listing", collection: "ormedic" %>
-<%= link_to "Clear-Cell", controller: "products", action: "listing", collection: "clear-cell" %>
-<%= link_to "The-Max", controller: "products", action: "listing", collection: "the-max" %>
-<%= link_to "Iluma", controller: "products", action: "listing", collection: "iluma" %>
-<%= link_to "Prevention", controller: "products", action: "listing", collection: "prevention" %>
-<%= link_to "Body-Spa", controller: "products", action: "listing", collection: "body-spa" %>
-<%= link_to "Ageless-Lashes", controller: "products", action: "listing", collection: "ageless-lashes" %>
-<%= link_to "I-Beauty", controller: "products", action: "listing", collection: "i-beauty" %>
-<%= link_to "Image-MD", controller: "products", action: "listing", collection: "image-md" %>
-<%= link_to "I-Peel", controller: "products", action: "listing", collection: "i-peel" %>
-<%= link_to "O2-Lift", controller: "products", action: "listing", collection: "o2-lift" %>
-<%= link_to "Home", root_path %>
+
+
+<main class="portfolio-block">
+    <div class="container wow fadeInUp">
+        <ul class="portfolio-menu" id="filters">
+            <li class="active"><a data-filter="*">All</a></li>
+            <li><a data-filter=".ageless">Ageless</a></li>
+            <li><a data-filter=".vital-c">Vital-C</a></li>
+            <li><a data-filter=".ormedic">Ormedic</a></li>
+            <li><a data-filter=".">m</a></li>
+        </ul>
+        <div class="row portfolio-list image-grid">
+          
+          <% @products.each do |item| %>
+            <%= content_tag(:div, class: ["item", "col-md-4", "col-sm-4", "col-xs-12", "#{item.collection}"]) do %>
+              
+              <%= link_to item.name, item %>
+            <% end %>
+          
+          <% end %>
+          
+        </div>
+        <div class="app-item"><a class="shortcode_button add-item">Load More</a></div>
+    </div>
+</main>
+<!-- //section content -->
+
+
+<%# @products.each do |item| %>
+          <%# content_tag :div, class: ["item", "col-md-4", "col-sm-4", "col-xs-12"]  %>
+          <%# link_to item.name, class:"prettyPhoto", "data-rel" => "prettyPhoto[portfolio55]", item do %>
+          <%# image_tag item.image %>
+<!--
+                    <div class="caption">
+                        <div class="info">
+                            <h4>Total Facial Cleanser</h4>
+                            <div class="separator"></div>
+                            <p>hi there</p>
+                        </div>
+                    </div>
+-->
+          <%# end %>
+          <%# end %>
+
+
+<main class="container">
+  <h2>What we sell:</h2>
+  
+  <%= link_to "Ageless", controller: "products", action: "listing", collection: "ageless" %>
+  <%= link_to "Vital-C", controller: "products", action: "listing", collection: "vital-c" %>
+  <%= link_to "Ormedic", controller: "products", action: "listing", collection: "ormedic" %>
+  <%= link_to "Clear-Cell", controller: "products", action: "listing", collection: "clear-cell" %>
+  <%= link_to "The-Max", controller: "products", action: "listing", collection: "the-max" %>
+  <%= link_to "Iluma", controller: "products", action: "listing", collection: "iluma" %>
+  <%= link_to "Prevention", controller: "products", action: "listing", collection: "prevention" %>
+  <%= link_to "Body-Spa", controller: "products", action: "listing", collection: "body-spa" %>
+  <%= link_to "Ageless-Lashes", controller: "products", action: "listing", collection: "ageless-lashes" %>
+  <%= link_to "I-Beauty", controller: "products", action: "listing", collection: "i-beauty" %>
+  <%= link_to "Image-MD", controller: "products", action: "listing", collection: "image-md" %>
+  <%= link_to "I-Peel", controller: "products", action: "listing", collection: "i-peel" %>
+  <%= link_to "O2-Lift", controller: "products", action: "listing", collection: "o2-lift" %>
+  <%= link_to "Home", root_path %>
+</main>
