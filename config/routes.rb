@@ -9,8 +9,6 @@ Rails.application.routes.draw do
 
   post '/' => 'messages#create'
 
-  get 'listing' => 'products#listing'
-
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
