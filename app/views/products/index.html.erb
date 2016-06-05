@@ -1,10 +1,55 @@
-<header class="head_section center_section">
+<head>
+
+  <!-- Great Vibes Font -->
+  <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- Google Font -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Css Files -->
+  <link href="<%= asset_path('bootstrap.css') %>"  rel="stylesheet" type="text/css">
+  <link href="<%= asset_path('plugins.css') %>"    rel="stylesheet" type="text/css">
+  <link href="<%= asset_path('homePopup.css') %>"  rel="stylesheet" type="text/css">
+  <link href="<%= asset_path('style-pink.css') %>" rel="stylesheet" type="text/css">
+  <link href="<%= asset_path('responsive.css') %>" rel="stylesheet" type="text/css">
+  <link href="<%= asset_path('animate.css') %>"    rel="stylesheet" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="<%= asset_path('jquery.min.js') %>"></script>
+
+</head>
+<section id="top">
+<header>
   <div class="container">
+    <!-- logo -->
+    <div>
+        <a href="/"><p class="top-title">La Dolce Vita Med Spa</p></a>
+    </div>
+
+    <!-- menu -->
+    <nav class="navmenu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/products">Products</a></li>
+        </ul>
+    </nav><!-- end menu -->
+    <div class="clear"></div>
+
     <h2>Our Products</h2>
     <div class="separator"></div>
     <p>Lots and lots of beauty products!</p>
   </div>
 </header>
+</section>
 
 <main class="portfolio-block">
   <div class="container wow fadeInUp">
@@ -58,7 +103,7 @@
       <% @products.each do |item| %>
       <%= content_tag(:div, class: ["item", "col-md-4", "col-sm-4", "col-xs-12", "#{item.collection}"]) do %>
       
-      <%= link_to(item, class: "prettyPhoto", "data-rel": "prettyPhoto[portfolio55]") do %>
+      <%= link_to(item, "data-rel": "prettyPhoto[portfolio55]") do %>
       <%= image_tag item.image, class: "showroom" %>
       <div class="caption">
         <div class="info">
@@ -79,3 +124,18 @@
   </div>
 </main>
 <!-- //section content -->
+  <!-- javascript files-->
+	<script type="text/javascript" src="<%= asset_path('jquery.isotope.min.js') %>"></script>
+	<script type="text/javascript" src="<%= asset_path('sorting.js') %>"></script>
+  <script type="text/javascript" src="<%= asset_path('homePopupLoad.js') %>"></script>
+  <script type="text/javascript" src="<%= asset_path('homePopup.js') %>"></script>
+  <script type="text/javascript" src="<%= asset_path('plugins.js') %>"></script>
+  <script type="text/javascript" src="<%= asset_path('current.js') %>"></script>
+  <script type="text/javascript" src="<%= asset_path('wow.min.js') %>"></script>
+
+  <!-- animation on scrolling-->
+	<script>
+  	new WOW().init();
+  </script>
+
+  <!-- <script> -->
