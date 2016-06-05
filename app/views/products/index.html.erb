@@ -96,7 +96,7 @@
       </li>
     </ul>
     
-    <div class="row portfolio-list image-grid">
+    <div id="product-list" class="row portfolio-list image-grid">
       
       <% @products.each do |item| %>
       <%= content_tag(:div, class: ["item", "col-md-4", "col-sm-4", "col-xs-12", "#{item.collection}"]) do %>
