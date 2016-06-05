@@ -62,9 +62,9 @@
       <%= image_tag item.image, class: "showroom" %>
       <div class="caption">
         <div class="info">
-          <h4><%= item.name %></h4>
+          <h4><%= item.name.upcase %></h4>
           <div class="separator"></div>
-          <p><%= item.collection.capitalize %></p>
+          <p><%= item.collection.upcase %></p>
         </div>
       </div>
       <% end %>
