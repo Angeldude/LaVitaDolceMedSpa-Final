@@ -11,6 +11,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'pg', '~> 0.18.4'
 gem 'better_errors', '~> 2.1', '>= 2.1.1'
 gem 'dotenv-rails', :groups => [:development, :test]
+gem 'rails_12factor', '~> 0.0.3'
 
 group :development, :test do
   gem 'byebug'
