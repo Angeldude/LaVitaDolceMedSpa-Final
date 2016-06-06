@@ -15,11 +15,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Css Files -->
-  <link href="<%= asset_path('plugins.css') %>"    rel="stylesheet" type="text/css">
-  <link href="<%= asset_path('homePopup.css') %>"  rel="stylesheet" type="text/css">
-  <link href="<%= asset_path('style-pink.css') %>" rel="stylesheet" type="text/css">
-  <link href="<%= asset_path('responsive.css') %>" rel="stylesheet" type="text/css">
-  <link href="<%= asset_path('animate.css') %>"    rel="stylesheet" type="text/css">
+  <%= stylesheet_link_tag 'plugins' %>
+  <%= stylesheet_link_tag 'style-pink' %>
+  <%= stylesheet_link_tag 'responsive' %>
+  <%= stylesheet_link_tag 'animate' %>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
@@ -48,9 +47,9 @@
 
 
 <main>
-  <%= image_tag @product.image, width: "20%", height: "auto" %>
-  <%= @product.name.upcase %>
-  <div class="tabs">
+  <%= image_tag @product.image, width: "20%", height: "auto", class: "center-block" %>
+  <p class="text-center"><%= @product.name.upcase %></p>
+  <div class="container tabs">
     <div class="tab">
       <input type="radio" id="tab-1" name="tab-grouped-1" checked>
       <label for="tab-1">Description</label>
@@ -76,17 +75,7 @@
     </div>
   </div>
   
-  
-<!--
-  <aside>
-    <%# @product.image %>
-    <%# @product.name.capitalize %>
-    <%# @product.description %>
-    <%# @product.skintype %>
-    <%# @product.benefits %>
-    <%# @product.directions %>
-  </aside>
--->
+
 </main>
 
 
@@ -96,8 +85,6 @@
   <!-- javascript files-->
 	<script type="text/javascript" src="<%= asset_path('jquery.isotope.min.js') %>"></script>
 	<script type="text/javascript" src="<%= asset_path('sorting.js') %>"></script>
-  <script type="text/javascript" src="<%= asset_path('homePopupLoad.js') %>"></script>
-  <script type="text/javascript" src="<%= asset_path('homePopup.js') %>"></script>
   <script type="text/javascript" src="<%= asset_path('plugins.js') %>"></script>
   <script type="text/javascript" src="<%= asset_path('current.js') %>"></script>
   <script type="text/javascript" src="<%= asset_path('wow.min.js') %>"></script>

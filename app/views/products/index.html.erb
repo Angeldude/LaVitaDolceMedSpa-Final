@@ -15,11 +15,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Css Files -->
-  <link href="<%= asset_path('plugins.css') %>"    rel="stylesheet" type="text/css">
-  <link href="<%= asset_path('homePopup.css') %>"  rel="stylesheet" type="text/css">
-  <link href="<%= asset_path('style-pink.css') %>" rel="stylesheet" type="text/css">
-  <link href="<%= asset_path('responsive.css') %>" rel="stylesheet" type="text/css">
-  <link href="<%= asset_path('animate.css') %>"    rel="stylesheet" type="text/css">
+  <%= stylesheet_link_tag 'plugins' %>
+  <%= stylesheet_link_tag 'style-pink' %>
+  <%= stylesheet_link_tag 'responsive' %>
+  <%= stylesheet_link_tag 'animate' %>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
@@ -122,13 +121,11 @@
 </main>
 <!-- //section content -->
   <!-- javascript files-->
-	<script type="text/javascript" src="<%= asset_path('jquery.isotope.min.js') %>"></script>
-	<script type="text/javascript" src="<%= asset_path('sorting.js') %>"></script>
-  <script type="text/javascript" src="<%= asset_path('homePopupLoad.js') %>"></script>
-  <script type="text/javascript" src="<%= asset_path('homePopup.js') %>"></script>
-  <script type="text/javascript" src="<%= asset_path('plugins.js') %>"></script>
-  <script type="text/javascript" src="<%= asset_path('current.js') %>"></script>
-  <script type="text/javascript" src="<%= asset_path('wow.min.js') %>"></script>
+  <%= javascript_include_tag 'jquery.isotope.min' %>
+  <%= javascript_include_tag 'sorting' %>
+  <%= javascript_include_tag 'plugins' %>
+  <%= javascript_include_tag 'current' %>
+  <%= javascript_include_tag 'wow.min' %>
 
   <!-- animation on scrolling-->
 	<script>
