@@ -1,3 +1,58 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
+<<<<<<< HEAD
 // You can use Sass (SCSS) here: https://sass-lang.com/
+=======
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#product-list .item {
+    width: 20%;
+    height: auto;
+	margin-bottom:30px;
+	overflow:hidden;
+}
+
+.tabs {
+  position: relative;
+  min-height: 150px;
+  clear: both;
+  margin: 25px 0;
+}
+
+.tab {
+  float: left;
+}
+
+.tab label {
+  background: #eee;
+  padding: 3px;
+  border: 1px solid #ccc;
+  margin-left: -1px;
+  position: relative;
+  left: 1px;
+}
+
+.tab [type=radio]{
+  display: none;
+}
+
+.content-info {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+
+[type=radio]:checked ~ label ~ .content-info {
+  z-index: 1;
+}
+>>>>>>> e5f1d2392e3ce54af8f6e319941318b231278fc0

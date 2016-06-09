@@ -744,7 +744,7 @@ header .background img, header .background video {
 }
 .portfolio-list .item a img {
 	vertical-align:top;
-	width: 100%;
+    width: 100%;
 }
 .app-item {
 	text-align: center;

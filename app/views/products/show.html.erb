@@ -1,3 +1,101 @@
-<%= @product.name.capitalize %>
-<%= image_tag @product.image %>
-<%= link_to 'Back', controller: "products", action: "listing", collection: @product.collection %>
+<head>
+
+  <!-- Great Vibes Font -->
+  <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- Google Font -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Css Files -->
+  <%= stylesheet_link_tag 'plugins' %>
+  <%= stylesheet_link_tag 'style-pink' %>
+  <%= stylesheet_link_tag 'responsive' %>
+  <%= stylesheet_link_tag 'animate' %>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+</head>
+<section id="top">
+<header>
+  <div class="container">
+    <!-- logo -->
+    <div>
+        <a href="/"><p class="top-title">La Dolce Vita Med Spa</p></a>
+    </div>
+
+    <!-- menu -->
+    <nav class="navmenu">
+        <ul>
+          <li><%= link_to "Products", :back %></li>
+        </ul>
+    </nav><!-- end menu -->
+    <div class="clear"></div>
+  </div>
+</header>
+</section>
+
+
+
+
+<main>
+  <%= image_tag @product.image, width: "20%", height: "auto", class: "center-block" %>
+  <p class="text-center"><%= @product.name.upcase %></p>
+  <div class="container tabs">
+    <div class="tab">
+      <input type="radio" id="tab-1" name="tab-grouped-1" checked>
+      <label for="tab-1">Description</label>
+      <div class="content-info"><%= @product.description %></div>
+    </div>
+    
+    <div class="tab">
+      <input type="radio" id="tab-2" name="tab-grouped-1">
+      <label for="tab-2">Skintype</label>
+      <div class="content-info"><%= @product.skintype %></div>
+    </div>
+    
+    <div class="tab">
+      <input type="radio" id="tab-3" name="tab-grouped-1">
+      <label for="tab-3">Benefits</label>
+      <div class="content-info"><%= @product.benefits %></div>
+    </div>
+    
+    <div class="tab">
+      <input type="radio" id="tab-4" name="tab-grouped-1">
+      <label for="tab-4">Directions</label>
+      <div class="content-info"><%= @product.directions %></div>
+    </div>
+  </div>
+  
+
+</main>
+
+
+
+
+<!-- //section content -->
+  <!-- javascript files-->
+	<script type="text/javascript" src="<%= asset_path('jquery.isotope.min.js') %>"></script>
+	<script type="text/javascript" src="<%= asset_path('sorting.js') %>"></script>
+  <script type="text/javascript" src="<%= asset_path('plugins.js') %>"></script>
+  <script type="text/javascript" src="<%= asset_path('current.js') %>"></script>
+  <script type="text/javascript" src="<%= asset_path('wow.min.js') %>"></script>
+
+  <!-- animation on scrolling-->
+	<script>
+  	new WOW().init();
+  </script>
+
+  <!-- <script> -->
+
+
+
+<%= link_to 'Back', :back %>
