@@ -173,7 +173,7 @@ a.menu_toggler { display:none;
 		width:20px;
 		height:20px;
 		background-repeat:no-repeat;
-		background:url(btn_menu.png) no-repeat;		
+		background:url(btn_menu.png) no-repeat;
 	}
 	.fixed-menu,
 	.fixed-menu:before,
@@ -200,6 +200,6 @@ a.menu_toggler { display:none;
 	.mobile_menu_wrapper a {
 		color:#fff;
 	}
-	.mobile_menu_wrapper a:hover {color:#abbd69;
+	.mobile_menu_wrapper a:hover {color:#ee61a4;
 	}
 }

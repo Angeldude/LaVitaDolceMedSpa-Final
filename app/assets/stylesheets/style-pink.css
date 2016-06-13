@@ -1,7 +1,3 @@
-#phone_number {
-	color: #ee61a4 !important;
-}
-
 img {
 	border:none 0;
 	outline:none;
@@ -75,7 +71,7 @@ html { font-size: 100%;
 }
 a,
 a:focus {
-	color: #262626;
+	color: #000;
 	text-decoration:none !important;
 	outline:none;
 }
@@ -246,7 +242,7 @@ img {max-width:100%;
 .navmenu li a:hover,
 .navmenu li.active a {
     text-decoration: none;
-	color:#ee61a4;
+		color:#ee61a4;
 }
 a.menu_toggler {display:none;
 }

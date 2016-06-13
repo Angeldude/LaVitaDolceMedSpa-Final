@@ -8,4 +8,6 @@ Rails.application.config.assets.version = '1.0'
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-Rails.application.config.assets.precompile += %w( bootstrap.css plugins.css homePopup.css style-pink.css responsive.css animate.css jquery.min.js jquery.isotope.min.js sorting.js homePopupLoad.js homePopup.js plugins.js current.js wow.min.js )
+
+# Add 'homePopupLoad.js homePopup.js homePopup.css' for the popup window to render
+Rails.application.config.assets.precompile += %w( bootstrap.css plugins.css  style-pink.css responsive.css animate.css jquery.min.js jquery.isotope.min.js sorting.js plugins.js current.js wow.min.js )
