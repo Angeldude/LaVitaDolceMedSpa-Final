@@ -9,7 +9,7 @@ class MessagesController < ApplicationController
 
     if @message.valid?
       MessageMailer.new_message(@message).deliver_now
-      # flash.now[:alert] = "Message successfully sent."
+      flash.now[:alert] = "Message successfully sent."
       redirect_to root_path
     else
       render 'welcome/index'
