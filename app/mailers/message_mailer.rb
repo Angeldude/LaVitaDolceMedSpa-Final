@@ -1,11 +1,11 @@
 class MessageMailer < ApplicationMailer
 
-  default from: ENV['GMAIL_USER']
-  default to: "j.naranjojr@gmail.com"
+  default from: "noreply@ladolcevitaspa.com"
+  default to: "ladolcevitaspa1@gmail.com"
 
   def new_message(message)
     @message = message
 
-    mail subject: "Message from #{message.name}"
+    mail subject: "[NEW CONTACT] #{message.name}"
   end
 end
