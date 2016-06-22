@@ -2,6 +2,7 @@ class MessagesController < ApplicationController
 
   def index
     @message = Message.new
+    @newsletter = Newsletter.new
   end
 
   def create

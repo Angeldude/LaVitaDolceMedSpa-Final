@@ -48,10 +48,16 @@
                         <h3>Newsletter Signup</h3>
                     </div>
                     <p>Signup to our weekly newsletter and receive our great promotions. We'll keep you updated.</p>
-                    <div class="ns_block">
-                        <input type="text" class="ns_input" placeholder="Email address" title="Email address">
-                        <input type="submit" class="shortcode_button" value="Sign Up">
-                    </div>
+
+                    <%= form_for @newsletter, url: root_path do |newsletter_form| %>
+
+                      <div class="ns_block">
+                        <%= newsletter_form.text_field :email, :class => 'ns_input', placeholder: "Email address" %>
+                        <%= newsletter_form.submit "SIGN UP", :class => 'shortcode_button' %>
+                      </div>
+
+                    <% end %>
+
                     <div class="social">
                         <a href="https://www.facebook.com/Ladolcevitamedspa"          class="soc-f"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
                         <a href="https://www.twitter.com/ladolcevitaspa_"             class="soc-t"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
