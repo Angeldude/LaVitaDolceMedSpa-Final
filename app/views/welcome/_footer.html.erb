@@ -49,14 +49,7 @@
                     </div>
                     <p>Signup to our weekly newsletter and receive our great promotions. We'll keep you updated.</p>
 
-                    <%= form_for @newsletter, url: root_path do |newsletter_form| %>
-
-                      <div class="ns_block">
-                        <%= newsletter_form.text_field :email, :class => 'ns_input', placeholder: "Email address" %>
-                        <%= newsletter_form.submit "SIGN UP", :class => 'shortcode_button' %>
-                      </div>
-
-                    <% end %>
+                    <%= render 'newsletter/new'%>
 
                     <div class="social">
                         <a href="https://www.facebook.com/Ladolcevitamedspa"          class="soc-f"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
