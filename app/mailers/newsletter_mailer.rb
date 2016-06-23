@@ -1,7 +1,7 @@
 class NewsletterMailer < ApplicationMailer
 
-  default from: "La Dolce Vita Med Spa"
-  default to: "ladolcevitaspa1@gmail.com"
+  default from: "noreply@ladolcevitaspa.com"
+  default to: ENV['GMAIL_USER']
 
   def new_letter(email)
     @newsletter = email
