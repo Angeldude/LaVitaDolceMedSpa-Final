@@ -1,0 +1,8 @@
+<%= form_for @newsletter, url: notification_path(@notification) do |newsletter_form| %>
+
+  <div class="ns_block">
+    <%= newsletter_form.text_field :email, :class => 'ns_input', placeholder: "Email address" %>
+    <%= newsletter_form.submit "SIGN UP", :class => 'shortcode_button' %>
+  </div>
+
+<% end %>

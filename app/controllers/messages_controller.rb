@@ -2,10 +2,12 @@ class MessagesController < ApplicationController
 
   def index
     @message = Message.new
+    @newsletter = Newsletter.new
   end
 
   def create
     @message = Message.new(message_params)
+    @newsletter = Newsletter.new
 
     if @message.valid?
       MessageMailer.new_message(@message).deliver_now
