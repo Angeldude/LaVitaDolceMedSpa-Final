@@ -1,11 +1,11 @@
 class NewsletterMailer < ApplicationMailer
 
   default from: "noreply@ladolcevitaspa.com"
-  default to: "ladolcevitaspa1@gmail.com"
+  default to: "j.naranjojr@gmail.com"
 
-  def new_email(email)
+  def new_letter(email)
     @newsletter = email
 
-    mail subject: "[NEWSLETTER] - #{newsletter.email}"
+    mail subject: "[NEWSLETTER REQUEST]"
   end
 end

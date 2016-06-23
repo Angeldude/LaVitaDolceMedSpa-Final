@@ -7,6 +7,7 @@ class MessagesController < ApplicationController
 
   def create
     @message = Message.new(message_params)
+    @newsletter = Newsletter.new
 
     if @message.valid?
       MessageMailer.new_message(@message).deliver_now

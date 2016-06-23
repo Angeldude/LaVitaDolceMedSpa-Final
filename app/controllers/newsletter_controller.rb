@@ -2,13 +2,15 @@ class NewsletterController < ApplicationController
 
   def index
     @newsletter = Newsletter.new
+    @message = Message.new
   end
 
   def create
     @newsletter = Newsletter.new(newsletter_params)
+    @message = Message.new
 
     if @newsletter.valid?
-      NewsletterMailer.new_message(@newsletter).deliver_now
+      NewsletterMailer.new_letter(@newsletter).deliver_now
       flash.now[:alert] = "Newsletter registration successfully sent."
       redirect_to root_path
     else
@@ -20,7 +22,7 @@ class NewsletterController < ApplicationController
 private
 
   def newsletter_params
-    params.permit(:email)
+    params.require(:newsletter).permit(:email)
   end
 
 end

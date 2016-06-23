@@ -1,4 +1,4 @@
-<%= form_for @newsletter, url: root_path do |newsletter_form| %>
+<%= form_for @newsletter, url: notification_path(@notification) do |newsletter_form| %>
 
   <div class="ns_block">
     <%= newsletter_form.text_field :email, :class => 'ns_input', placeholder: "Email address" %>
