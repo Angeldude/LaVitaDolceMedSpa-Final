@@ -1,7 +1,7 @@
 class MessageMailer < ApplicationMailer
 
-  default from: "noreply@ladolcevitaspa.com"
-  default to: "j.naranjojr@gmail.com"
+  default from: "La Dolce Vita Med Spa"
+  default to: ENV['GMAIL_USER']
 
   def new_message(message)
     @message = message
