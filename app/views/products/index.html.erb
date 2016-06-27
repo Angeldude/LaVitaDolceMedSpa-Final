@@ -71,7 +71,8 @@
       <% @products.each do |item| %>
       <%= content_tag(:div, class: ["item", "col-md-4", "col-sm-4", "col-xs-12", "#{item.collection}"]) do %>
 
-      <%= link_to(item, "data-rel": "prettyPhoto[portfolio55]", class: "prettyPhoto") do %>
+      <%# class "prettyPhoto" keeps from going to products page and breaks things %>
+      <%= link_to(item, "data-rel": "prettyPhoto[portfolio55]") do %>
       <%= image_tag item.image, class: "showroom" %>
       <div class="caption">
         <div class="info">
