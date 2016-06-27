@@ -55,26 +55,26 @@
       <label for="tab-1">Description</label>
       <div class="content-info"><%= @product.description %></div>
     </div>
-    
+
     <div class="tab">
       <input type="radio" id="tab-2" name="tab-grouped-1">
       <label for="tab-2">Skintype</label>
       <div class="content-info"><%= @product.skintype %></div>
     </div>
-    
+
     <div class="tab">
       <input type="radio" id="tab-3" name="tab-grouped-1">
       <label for="tab-3">Benefits</label>
       <div class="content-info"><%= @product.benefits %></div>
     </div>
-    
+
     <div class="tab">
       <input type="radio" id="tab-4" name="tab-grouped-1">
       <label for="tab-4">Directions</label>
       <div class="content-info"><%= @product.directions %></div>
     </div>
   </div>
-  
+
 
 </main>
 
@@ -97,5 +97,6 @@
   <!-- <script> -->
 
 
-
-<%= link_to 'Back', :back %>
+  <div class="container">
+      <%= link_to 'Back', :back %>
+  </div>
