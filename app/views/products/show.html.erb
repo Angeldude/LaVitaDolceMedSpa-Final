@@ -47,32 +47,31 @@
 
 
 <main>
-  <%= image_tag @product.image, width: "20%", height: "auto", class: "center-block" %>
-  <p class="text-center"><%= @product.name.upcase %></p>
-  <div class="container tabs">
-    <div class="tab">
-      <input type="radio" id="tab-1" name="tab-grouped-1" checked>
-      <label for="tab-1">Description</label>
-      <div class="content-info"><%= @product.description %></div>
-    </div>
+  <%= image_tag @product.image, width: "14%", height: "auto", class: "center-block" %>
+     
+  <div class="container modal-body">
+    <h3><%= @product.name.upcase %></h3>
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#product-desc">Description</a></li>
+          <li><a data-toggle="tab" href="#product-skintype">Skintype</a></li>
+          <li><a data-toggle="tab" href="#product-benefits">Benefits</a></li>
+          <li><a data-toggle="tab" href="#product-directions">Directions</a></li>
+        </ul><br>
 
-    <div class="tab">
-      <input type="radio" id="tab-2" name="tab-grouped-1">
-      <label for="tab-2">Skintype</label>
-      <div class="content-info"><%= @product.skintype %></div>
-    </div>
-
-    <div class="tab">
-      <input type="radio" id="tab-3" name="tab-grouped-1">
-      <label for="tab-3">Benefits</label>
-      <div class="content-info"><%= @product.benefits %></div>
-    </div>
-
-    <div class="tab">
-      <input type="radio" id="tab-4" name="tab-grouped-1">
-      <label for="tab-4">Directions</label>
-      <div class="content-info"><%= @product.directions %></div>
-    </div>
+        <div class="tab-content">
+          <div id="product-desc" class="tab-pane fade in active">
+            <p><%= @product.description || "No information available" %></p>
+          </div>
+          <div id="product-skintype" class="tab-pane fade">
+            <p><%= @product.skintype || "No information available"  %></p>
+          </div>
+          <div id="product-benefits" class="tab-pane fade">
+            <p><%= @product.benefits || "No information available" %></p>
+          </div>
+          <div id="product-directions" class="tab-pane fade">
+            <p><%= @product.directions || "No information available"%></p>
+          </div>
+        </div>
   </div>
 
 
