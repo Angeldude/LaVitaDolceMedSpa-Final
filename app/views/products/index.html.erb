@@ -75,13 +75,15 @@
       <%# class "prettyPhoto" keeps from going to products page and breaks things %>
       <%= link_to(item, "data-rel": "prettyPhoto[portfolio55]") do %>
       <%= image_tag item.image %>
+<!--
       <div class="caption">
         <div class="info">
-          <h4><%= item.name.upcase %></h4>
+          <h4><%# item.name.upcase %></h4>
           <div class="separator"></div>
-          <p><%= item.collection.upcase %></p>
+          <p><%# item.collection.upcase %></p>
         </div>
       </div>
+-->
       <% end %>
       <% end %>
 
